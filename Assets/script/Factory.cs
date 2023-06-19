@@ -5,9 +5,6 @@ using UnityEngine;
 
 public static class Factory
 {
-
-    public static BallType BallType;
-
     /// <summary>
     /// create the ball
     /// </summary>

@@ -68,17 +68,16 @@ public class EventManager
     {
         get
         {
-            lock (m_Instance)
-            {
-                if (m_Instance == null)
-                    m_Instance = new EventManager();
-            }
-            return m_Instance;
+            
+            if (m_Instance == null)
+                return m_Instance = new EventManager();
+            
+            else return m_Instance;
         }
     }
 
     /// <summary>
-    /// intance the eventmap
+    /// intanciate the eventmap
     /// </summary>
     private EventManager() 
     {
